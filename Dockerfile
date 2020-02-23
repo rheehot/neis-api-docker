@@ -1,4 +1,4 @@
-FROM ilcm96/uwsgi-nginx:pyhton3.8-buster
+FROM ilcm96/uwsgi-nginx:python3.8-buster
 
 RUN pip install flask Flask-Caching requests
 RUN apt-get update \

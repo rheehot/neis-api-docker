@@ -1,0 +1,11 @@
+dist: bionic
+
+language: python
+
+python:
+  - "3.8"
+
+jobs:
+  include:
+    - stage: Deploy
+      script: python3 scripts/deploy.py

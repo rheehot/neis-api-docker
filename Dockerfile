@@ -19,6 +19,7 @@ RUN rm -rf /app/* \
     && wget https://github.com/ilcm96/neis-api/archive/master.zip \
     && unzip master.zip \
     && apt-get remove --purge -y wget unzip \
+    && apt-get autoremove --purge -y \
     && cp -rf ./neis-api-master/meal/* /app \
     && rm -rf /tmp/*
 WORKDIR /app

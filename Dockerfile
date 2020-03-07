@@ -20,7 +20,7 @@ RUN rm -rf /app/* \
     && unzip master.zip \
     && apt-get remove --purge -y wget unzip \
     && apt-get autoremove --purge -y \
-    && cp -rf ./neis-api-master/meal/* /app \
+    && cp -rf ./neis-api-master/* /app \
     && rm -rf /tmp/*
 WORKDIR /app
 

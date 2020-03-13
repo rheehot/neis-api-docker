@@ -14,9 +14,6 @@ USE_STATIC_PATH=${STATIC_PATH:-'/app/static'}
 # Get the listen port for Nginx, default to 80
 USE_LISTEN_PORT=${LISTEN_PORT:-80}
 
-# Make directory for nginx cache
-mkdir /etc/nginx/cache
-
 if [ -f /app/nginx.conf ]; then
     cp /app/nginx.conf /etc/nginx/nginx.conf
 else
